@@ -1,0 +1,17 @@
+[package]
+name = "WarsimCheat-rs"
+version = "0.1.0"
+authors = ["fmajesty <fmajesty@pm.me>"]
+edition = "2018"
+
+[dependencies]
+process-memory = "0.2.3"
+winapi = {version="0.3.7", features=["handleapi", "std"]}
+kernel32-sys = "0.2.2"
+read-process-memory = "0.1.2"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
